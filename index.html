@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蒋芷颖 | 艺术与科技</title>
+    <meta name="description" content="蒋芷颖 — 艺术与科技专业，专注于数字艺术、空间设计与交互媒体。">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== 导航栏 ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">蒋芷颖</a>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#portfolio" class="nav-link">作品</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== Hero 首页 ========== -->
+    <section id="hero" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <span class="hero-badge">ART × TECHNOLOGY</span>
+            <div class="hero-title">
+                <span class="title-line">蒋芷颖</span>
+                <span class="subtitle-line">艺术与科技 · 数字空间创作者</span>
+            </div>
+            <p class="hero-desc">
+                在艺术与科技的交汇处探索视觉表达的无限可能，以数字工具构建沉浸式空间体验。
+            </p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">查看作品</a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ========== 关于我 ========== -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT ME</span>
+                <h2 class="section-title">关于我</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="avatar-wrapper">
+                        <img src="images/avatar.jpg" alt="蒋芷颖" class="avatar-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>用艺术感知世界，用科技重塑表达</h3>
+                    <p>
+                        我是蒋芷颖，就读于艺术与科技专业。我的创作跨越数字艺术、空间设计与交互媒体，
+                        致力于在传统美学与前沿技术之间寻找平衡点。
+                    </p>
+                    <p>
+                        从 Blender 三维建模到 TouchDesigner 实时视觉，从材质研究到空间叙事，
+                        我相信每一件作品都是技术与感知的对话。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">3+</span>
+                            <span class="stat-label">专业方向</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="10">10+</span>
+                            <span class="stat-label">设计项目</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="5">5+</span>
+                            <span class="stat-label">工具技能</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 技能 ========== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">SKILLS</span>
+                <h2 class="section-title">技能领域</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M30 8L52 20V40L30 52L8 40V20Z" stroke-linejoin="round"/>
+                            <path d="M30 8V30M30 30L52 20M30 30L8 20M30 30V52" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h3>3D 建模</h3>
+                    <p>Blender / 材质贴图 / 空间渲染</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="8" width="44" height="44" rx="4"/>
+                            <path d="M20 24H40M20 30H40M20 36H32" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>空间设计</h3>
+                    <p>展览空间 / 快闪店 / 材质研究</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="30" cy="30" r="20"/>
+                            <path d="M30 10V30L42 36" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>交互设计</h3>
+                    <p>TouchDesigner / 实时生成 / 传感器</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 30C10 18 20 8 30 8C40 8 50 18 50 30" stroke-linecap="round"/>
+                            <path d="M50 30C50 42 40 52 30 52C20 52 10 42 10 30" stroke-linecap="round"/>
+                            <circle cx="30" cy="30" r="6"/>
+                        </svg>
+                    </div>
+                    <h3>数字艺术</h3>
+                    <p>生成艺术 / 视觉编程 / 动态图形</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 48V20L30 8L48 20V48" stroke-linejoin="round"/>
+                            <path d="M22 48V34H38V48" />
+                        </svg>
+                    </div>
+                    <h3>品牌视觉</h3>
+                    <p>POP MART 风格 / 视觉系统 / 包装设计</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M30 8C18 8 10 18 10 28C10 40 30 52 30 52C30 52 50 40 50 28C50 18 42 8 30 8Z" stroke-linejoin="round"/>
+                            <circle cx="30" cy="28" r="6"/>
+                        </svg>
+                    </div>
+                    <h3>文化研究</h3>
+                    <p>传统美学 / 青花瓷 / 文化叙事</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 作品集 ========== -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-title">精选作品</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="openModal('popmart')">
+                    <div class="portfolio-thumb">
+                        <img src="images/work1.jpg" alt="POP MART ROBO SHOP" class="thumb-img">
+                        <div class="thumb-overlay">
+                            <span>POP MART ROBO SHOP</span>
+                            <small>Blender 快闪店空间设计</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('qingdiesuran')">
+                    <div class="portfolio-thumb">
+                        <img src="images/work2.jpg" alt="青叠素染艺术空间" class="thumb-img">
+                        <div class="thumb-overlay">
+                            <span>"青叠素染"艺术空间</span>
+                            <small>材质与空间设计研究</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('wenwu')">
+                    <div class="portfolio-thumb">
+                        <img src="images/work3.jpg" alt="TouchDesigner 交互" class="thumb-img">
+                        <div class="thumb-overlay">
+                            <span>TouchDesigner 交互</span>
+                            <small>数字媒体艺术实验</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('more')">
+                    <div class="portfolio-thumb">
+                        <img src="images/work4.jpg" alt="更多作品" class="thumb-img">
+                        <div class="thumb-overlay">
+                            <span>更多作品</span>
+                            <small>持续创作中...</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 联系 ========== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">联系我</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>欢迎交流合作</h3>
+                    <p>如果你对我的作品感兴趣，或有项目合作意向，欢迎通过以下方式联系我。</p>
+
+                    <a href="mailto:3209067562@qq.com" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="5" width="18" height="14" rx="2"/>
+                            <path d="M3 7L12 13L21 7" stroke-linecap="round"/>
+                        </svg>
+                        3209067562@qq.com
+                    </a>
+
+                    <a href="tel:15074984649" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92V19.92C22 20.52 21.52 21 20.92 21C10.47 21 2 12.53 2 2.08C2 1.48 2.48 1 3.08 1H6.08C6.68 1 7.16 1.48 7.16 2.08C7.16 3.68 7.36 5.24 7.74 6.74C7.84 7.14 7.74 7.58 7.42 7.9L5.86 9.46C7.06 11.86 9.14 13.94 11.54 15.14L13.1 13.58C13.42 13.26 13.86 13.16 14.26 13.26C15.76 13.64 17.32 13.84 18.92 13.84C19.52 13.84 20 14.32 20 14.92" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        15074984649
+                    </a>
+
+                    <a href="https://github.com/Zeyri" target="_blank" rel="noopener" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z"/>
+                        </svg>
+                        github.com/Zeyri
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="你的名字" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="你的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="留言内容" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 页脚 ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 蒋芷颖 · 艺术与科技</p>
+            <p class="footer-tagline">ART × TECHNOLOGY</p>
+        </div>
+    </footer>
+
+    <!-- 作品详情弹窗 -->
+    <div id="workModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div id="modalImage" class="modal-image"></div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDesc"></p>
+                    <div id="modalTags" class="modal-tags"></div>
+                    <a id="modalDownload" href="#" class="btn btn-primary" download style="display:none;">下载作品</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
